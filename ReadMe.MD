@@ -1,18 +1,29 @@
 #  Fine-Tuning RoBERTa with Hugging Face Transformers: Unveiling Sentiments in Political News from the 2016 US Presidential Campaign
 
+
+
 This repository contains Jupyter notebooks focused. The notebook **RoBERTa_Finetuning_Sentiment.ipynb** is the notebook that 
 trains the RoBERTA model (Liu et al. 2019) on the dataset created by Hamborg and Donnay, 2019 (https://huggingface.co/datasets/fhamborg/news_sentiment_newsmtsc).
 Please follow the link to Google Colab. The notebooks utilize the Hugging Face Transformers library and datasets from the Hugging Face model hub.
 The model can be found here: https://huggingface.co/MaxG1/roberta_fine_tuned_on_newsmstc_02_split
 
+
+
 The metrcis are Accuracy: 83, Precision:83, Recall:83 
 
+
+
 ![Alt text](Graphics/output.png)
+
+
+
+
 
 
 ## Files Overview
 
 1. **RoBERTa_Finetuning_Sentiment.ipynb:**
+see also https://colab.research.google.com/drive/1zOCMZkZlo88Fst9P6CgoHUYaPdqUdqGA?usp=sharing
    - Demonstrates fine-tuning of a RoBERTa model on news sentiment data.
    - Model loading, dataset preparation, tokenization, fine-tuning, and model evaluation.
 

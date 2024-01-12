@@ -9,7 +9,9 @@ The model can be found here: https://huggingface.co/MaxG1/roberta_fine_tuned_on_
 
 
 
-The metrcis are Accuracy: 83, Precision:83, Recall:83 
+The metrcis are F1 Score: 83.2, Accuracy: 83.4, Precision:83.5, Recall:83.4
+
+
 
 
 

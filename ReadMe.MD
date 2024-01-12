@@ -38,6 +38,29 @@ see also https://colab.research.google.com/drive/1zOCMZkZlo88Fst9P6CgoHUYaPdqUdq
    - It is able to evalute charged words like Terrorist (negative), Militant (neutral), or Freedom Fighter (positive) according to current societal discourses.
 
 
+## How to Use the Pipeline Class
+
+To use the pipeline class for sentiment analysis with the trained RoBERTa model, you can follow these steps in Python:
+
+```python
+from transformers import pipeline
+
+# Load the sentiment analysis pipeline
+sentiment_pipeline = pipeline('sentiment-analysis', model='MaxG1/roberta_fine_tuned_on_newsmstc_02_split', tokenizer='MaxG1/roberta_fine_tuned_on_newsmstc_02_split')
+
+# Example text for sentiment analysis
+text = "Political news during the US Presidential Campaign."
+
+# Get sentiment prediction
+result = sentiment_pipeline(text)
+
+# Print the result
+print(result)
+
+```
+
+
+
 # Bibliography
     - Hamborg, F., & Donnay, K. (2019). NewsMTSC: A Dataset for (Multi-)Target-dependent Sentiment Classification in Political News Articles. In P. Merlo, J. Tiedemann, & R. Tsarfaty (Eds.), Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Main Volume (pp. 1663–1675). Association for Computational Linguistics. https://doi.org/10.18653/v1/2021.eacl-main.142
     - Liu, Y., Ott, M., Goyal, N., Du Jingfei, Joshi, M., Chen, D., Levy, O., Lewis, M., Zettlemoyer, L., & Stoyanov, V. (2019, July 26). RoBERTa: A Robustly Optimized BERT Pretraining Approach. http://arxiv.org/pdf/1907.11692.pdf 
